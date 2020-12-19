@@ -1,0 +1,424 @@
+{
+  "name": "Quiet Light for VSC",
+  "author": "Ian Beck",
+  "globals": {
+    "background": "#f5f5f5",
+    "foreground": "#333",
+    "caret": "#333",
+    "block_caret": "#333",
+    "line_highlight": "#e4f6d4",
+    "misspelling": "",
+    "fold_marker": "#7a3e9d",
+    "accent": "#7a3e9d",
+    "gutter": "",
+    "gutter_foreground": "#aaa",
+    "line_diff_added": "",
+    "line_diff_modified": "",
+    "line_diff_deleted": "",
+    "selection": "#c1f5b0",
+    "inactive_selection": "#91b3e0",
+    "inactive_selection_foreground": "#fff",
+    "highlight": "#fef93533",
+    "find_highlight": "#fef93533",
+    "find_highlight_foreground": "#7a3e9d",
+    "guide": "#ebebeb",
+    "active_guide": "",
+    "stack_guide": "",
+    "brackets_foreground": "#c1f5b0",
+    "tags_foreground": "#c1f5b0",
+    "shadow": ""
+  },
+  "variables": {
+    "black": "",
+    "white": "",
+    "red": "",
+    "green": "",
+    "yellow": "",
+    "orange": "",
+    "blue": "",
+    "magenta": "",
+    "cyan": ""
+  },
+  "rules": [
+    {
+      "name": "Comments",
+      "foreground": "#aaaaaa",
+      "font_style": 0,
+      "scope": "comment, punctuation.definition.comment"
+    },
+    {
+      "name": "Comments: Keywords",
+      "foreground": "#aaaaaa",
+      "font_style": "bold",
+      "scope": "comment.keyword, keyword.codetag, keyword.phpdoc"
+    },
+    {
+      "name": "Invalid - Deprecated",
+      "background": "#96000014",
+      "font_style": 0,
+      "scope": "invalid.deprecated"
+    },
+    {
+      "name": "Invalid - Illegal",
+      "foreground": "#660000",
+      "background": "#96000014",
+      "font_style": 0,
+      "scope": "invalid.illegal"
+    },
+    {
+      "name": "Operators",
+      "foreground": "#777777",
+      "font_style": 0,
+      "scope": "keyword.operator"
+    },
+    {
+      "name": "Keywords",
+      "foreground": "#4b83cd",
+      "font_style": 0,
+      "scope": "keyword, keyword.operator.expression, keyword.control.at-rule.css, source.php storage.modifier, source.php storage.type"
+    },
+    {
+      "name": "Keywords: Punctuation",
+      "foreground": "#91b3e0",
+      "font_style": 0,
+      "scope": "punctuation.definition.keyword, keyword.control.at-rule.css punctuation"
+    },
+    {
+      "name": "Keywords: new",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "keyword.operator.new"
+    },
+    {
+      "name": "Types",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "storage, storage.type, storage.modifier, support.type"
+    },
+    {
+      "name": "Language Constants",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "constant.language, support.constant, variable.language, variable.language.this"
+    },
+    {
+      "name": "Variables",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "variable, support.variable"
+    },
+    {
+      "name": "Variables: Punctuation",
+      "foreground": "#b19bbd",
+      "font_style": 0,
+      "scope": "punctuation.definition.variable"
+    },
+    {
+      "name": "Functions",
+      "foreground": "#aa3731",
+      "font_style": 0,
+      "scope": "entity.name.function, entity.name.class, entity.method.name, support.function, meta.function-call"
+    },
+    {
+      "name": "Functions: definitions",
+      "font_style": "bold",
+      "scope": "entity.name.function, entity.name.class, entity.method.name"
+    },
+    {
+      "name": "Functions: parameters",
+      "foreground": "#333333",
+      "font_style": 0,
+      "scope": "meta.function-call.arguments"
+    },
+    {
+      "name": "Classes",
+      "foreground": "#aa3731",
+      "font_style": " bold",
+      "scope": "entity.name.type, entity.other.inherited-class, support.class"
+    },
+    {
+      "name": "Exceptions",
+      "foreground": "#660000",
+      "font_style": 0,
+      "scope": "entity.name.exception"
+    },
+    {
+      "name": "Sections",
+      "font_style": "bold",
+      "scope": "entity.name.section"
+    },
+    {
+      "name": "Numbers, Characters",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "constant.numeric, constant.character, constant"
+    },
+    {
+      "name": "Strings",
+      "foreground": "#448c27",
+      "font_style": 0,
+      "scope": "string, string.quoted, punctuation.definition.string, string.regexp, storage.type.string"
+    },
+    {
+      "name": "Strings: Escape Sequences",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "constant.character.escape"
+    },
+    {
+      "name": "Strings: Regex",
+      "foreground": "#333333",
+      "font_style": 0,
+      "scope": "string.regex"
+    },
+    {
+      "name": "Strings: Regex operators",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "string.regexp keyword, string.regexp keyword.operator, string.regexp constant, string.regexp constant.character, string.regexp punctuation"
+    },
+    {
+      "name": "Strings: Symbols",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "constant.other.symbol"
+    },
+    {
+      "name": "Strings: Interpolation",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "punctuation.definition.template-expression.begin.ts, punctuation.definition.template-expression.end.ts"
+    },
+    {
+      "name": "Punctuation",
+      "foreground": "#777777",
+      "font_style": 0,
+      "scope": "punctuation, punctuation.separator"
+    },
+    {
+      "name": "HTML: Doctype Declaration",
+      "foreground": "#aaaaaa",
+      "font_style": 0,
+      "scope": "meta.tag.sgml.doctype, meta.tag.sgml.doctype string, meta.tag.sgml.doctype entity.name.tag, meta.tag.sgml punctuation.definition.tag.html, meta.tag.preprocessor, meta.tag.preprocessor entity.name.tag, meta.tag.preprocessor entity.other.attribute-name"
+    },
+    {
+      "name": "HTML: Tags",
+      "foreground": "#91b3e0",
+      "font_style": 0,
+      "scope": "meta.tag, entity.attribute-name, punctuation.definition.tag.html, punctuation.definition.tag.begin.html, punctuation.definition.tag.end.html, entity.other.attribute-name.html, punctuation.separator.key-value.html"
+    },
+    {
+      "name": "HTML: Tag Names",
+      "foreground": "#4b83cd",
+      "font_style": 0,
+      "scope": "entity.name.tag"
+    },
+    {
+      "name": "HTML: Attribute Values",
+      "foreground": "#448c27",
+      "font_style": 0,
+      "scope": "meta.tag string.quoted, meta.tag punctuation.definition.string"
+    },
+    {
+      "name": "HTML: Entities",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "constant.character.entity, punctuation.definition.entity"
+    },
+    {
+      "name": "CSS: Selectors",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "meta.selector, selector.css, entity.name.selector, entity.other.attribute-name.id.css, source.css entity.name.tag, entity.other.attribute-name.class, entity.other.attribute-name.pseudo-class, entity.other.attribute-name.parent-selector, entity.other.attribute-name.pseudo-element, punctuation.definition.entity.css, entity.id.scss, entity.tag.scss, entity.class.scss, entity.pseudo-class.scss, entity.parent-selector.scss, entity.pseudo-element.scss, punctuation.separator.list.css, meta.property-list keyword.operator.less, source.css.less entity.other.attribute-name.id, entity.other.attribute-name.attribute.scss, entity.other.attribute-name.scss, entity.name.function.scss"
+    },
+    {
+      "name": "CSS: Property Names",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "meta.property-name, support.type.property-name"
+    },
+    {
+      "name": "CSS: Property Values",
+      "foreground": "#448c27",
+      "font_style": 0,
+      "scope": "meta.property-value, source.css keyword.other, source.css constant, source.css constant.numeric, source.css constant.numeric punctuation, meta.property-value support.constant"
+    },
+    {
+      "name": "CSS: Variable",
+      "foreground": "#aa3731",
+      "font_style": 0,
+      "scope": "source.css variable, source.css.less variable, source.css.scss variable"
+    },
+    {
+      "name": "CSS: Important Keyword",
+      "font_style": "bold",
+      "scope": "keyword.other.important"
+    },
+    {
+      "name": "JS: Variables",
+      "foreground": "#333333",
+      "font_style": 0,
+      "scope": "variable.js, source.js variable, source.js support.variable, source.js support.type"
+    },
+    {
+      "name": "JS: Function overrides",
+      "font_style": "",
+      "scope": "entity.name.function.js"
+    },
+    {
+      "name": "JS: Embedded",
+      "background": "#eaebe6",
+      "font_style": 0,
+      "scope": "source.embedded"
+    },
+    {
+      "name": "JSON: Properties",
+      "foreground": "#ab6526",
+      "font_style": 0,
+      "scope": "punctuation.support.type.property-name"
+    },
+    {
+      "name": "PHP: Background",
+      "background": "#e6ebf2",
+      "font_style": 0,
+      "scope": "source.php"
+    },
+    {
+      "name": "PHP: Delimiters",
+      "foreground": "#aa3731",
+      "font_style": "bold",
+      "scope": "punctuation.section.embedded.metatag.php"
+    },
+    {
+      "name": "Python: Decorators",
+      "foreground": "#aaaaaa",
+      "font_style": 0,
+      "scope": "entity.name.function.decorator, meta.function.decorator punctuation.definition, meta.function.decorator string.quoted, meta.function.decorator punctuation.definition.string, meta.function.decorator meta.function-call.arguments, meta.function.decorator variable.parameter, meta.function.decorator keyword.operator"
+    },
+    {
+      "name": "Python: Parameters",
+      "foreground": "#333333",
+      "font_style": 0,
+      "scope": "source.python variable.parameter"
+    },
+    {
+      "name": "Python: Support Type",
+      "foreground": "#333333",
+      "font_style": 0,
+      "scope": "source.python support.type"
+    },
+    {
+      "name": "Python: Function calls",
+      "foreground": "#aa3731",
+      "font_style": 0,
+      "scope": "source.python meta.function-call support.type"
+    },
+    {
+      "name": "Markup: Changed",
+      "background": "#fffab7",
+      "font_style": 0,
+      "scope": "markup.changed"
+    },
+    {
+      "name": "Markup: Deletion",
+      "background": "#feedef",
+      "font_style": 0,
+      "scope": "markup.deleted"
+    },
+    {
+      "name": "Markup: Emphasis",
+      "font_style": "italic",
+      "scope": "markup.italic"
+    },
+    {
+      "name": "Markup: Error",
+      "foreground": "#660000",
+      "background": "#96000014",
+      "font_style": 0,
+      "scope": "markup.error"
+    },
+    {
+      "name": "Markup: Insertion",
+      "background": "#e4f6d4",
+      "font_style": 0,
+      "scope": "markup.inserted"
+    },
+    {
+      "name": "Markup: Link",
+      "foreground": "#4b83cd",
+      "font_style": 0,
+      "scope": "meta.link, meta.image.inline"
+    },
+    {
+      "name": "Markup: Output",
+      "foreground": "#777777",
+      "font_style": 0,
+      "scope": "markup.output, markup.raw"
+    },
+    {
+      "name": "Markup: Prompt",
+      "foreground": "#777777",
+      "font_style": 0,
+      "scope": "markup.prompt"
+    },
+    {
+      "name": "Markup: Heading",
+      "foreground": "#333333",
+      "font_style": " bold",
+      "scope": "markup.heading"
+    },
+    {
+      "name": "Markup: Strong",
+      "foreground": "",
+      "font_style": "bold",
+      "scope": "markup.bold"
+    },
+    {
+      "name": "Markup: Traceback",
+      "foreground": "#660000",
+      "font_style": 0,
+      "scope": "markup.traceback"
+    },
+    {
+      "name": "Markup: Underline",
+      "font_style": "underline",
+      "scope": "markup.underline"
+    },
+    {
+      "name": "Markup Inline",
+      "foreground": "#777777",
+      "font_style": 0,
+      "scope": "markup.inline.raw"
+    },
+    {
+      "name": "Markdown: Punctuation",
+      "foreground": "#448c27",
+      "font_style": 0,
+      "scope": "markdown.punctuation, markdown.link punctuation, punctuation.definition.raw.markdown, punctuation.definition.heading.markdown, beginning.punctuation.definition.list.markdown, beginning.punctuation.definition.quote.markdown, punctuation.definition.bold.markdown, punctuation.definition.italic.markdown, punctuation.definition.metadata.markdown"
+    },
+    {
+      "name": "Markdown: Link title",
+      "foreground": "#7a3e9d",
+      "font_style": 0,
+      "scope": "string.other.link.description.markdown, string.other.link.title.markdown"
+    },
+    {
+      "name": "Extra: Diff Range",
+      "background": "#fffab7",
+      "font_style": 0,
+      "scope": "meta.diff.range, meta.diff.index, meta.separator"
+    },
+    {
+      "name": "Extra: Diff From",
+      "background": "#feedef",
+      "font_style": 0,
+      "scope": "meta.diff.header.from-file"
+    },
+    {
+      "name": "Extra: Diff To",
+      "background": "#e4f6d4",
+      "font_style": 0,
+      "scope": "meta.diff.header.to-file"
+    }
+  ]
+}
